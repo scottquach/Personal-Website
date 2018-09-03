@@ -5,6 +5,7 @@
     <Education/>
     <Experience/>
     <ProjectHighlight/>
+    <Resume/>
     <Footer/>
 
     <PageProgress/>
@@ -18,6 +19,7 @@ import Story from './components/Story.vue'
 import Education from './components/Education.vue'
 import Experience from './components/Experience.vue'
 import ProjectHighlight from './components/ProjectHighlight.vue'
+import Resume from './components/Resume.vue'
 import Footer from './components/Footer.vue'
 
 import PageProgress from './components/PageProgress.vue'
@@ -31,6 +33,7 @@ export default {
     Education,
     Experience,
     ProjectHighlight,
+    Resume,
     Footer,
     PageProgress
   }

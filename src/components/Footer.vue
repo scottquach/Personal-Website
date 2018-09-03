@@ -19,39 +19,59 @@ export default {};
 </script>
 
 <style scoped>
-    .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding-bottom: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    margin-top: 50px;
-    font-size: 1.15rem;
-    line-height: 1.5;
-    }
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 50px;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
 
-    .footer__created {
-    font-weight: 700;
-    }
+.footer__created {
+  font-weight: 700;
+}
 
-    .footer__inspired {
-    font-weight: 700;
-    }
+.footer__inspired {
+  font-weight: 700;
+}
 
-    .footer__links {
-    display: flex;
-    justify-content: space-around;
-    justify-self: flex-end;
-    }
+.footer__links {
+  display: flex;
+  justify-content: space-around;
+  justify-self: flex-end;
+}
 
-    a {
-    color: #3233cc;
-    margin: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.25rem;
-    }
+a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  background-color: #3233cc;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover::before {
+  color: black;
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+a {
+  color: #3233cc;
+  margin: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.25rem;
+  position: relative;
+}
 </style>

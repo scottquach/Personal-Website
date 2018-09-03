@@ -3,7 +3,7 @@
         <h3 class="project-highlights__title">Project Highlights</h3>
             <div class="project-highlights-list">
                 <div class="project">
-                    <div class="project__title">Personal Website V2</div>
+                    <a href="https://github.com/scottquach/Personal-Website" target="_blank" class="project__title">Personal Website V2</a>
                     <div class="project__description">That's the site your scrolling through now!</div>
                     <div class="project-skills">
                         <v-chip color="#3233CC" text-color="white"  >Vue.js</v-chip>
@@ -115,15 +115,25 @@ export default {};
   margin-bottom: 5px;
   text-decoration: none;
   color: #2c3e50;
+
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  padding-left: 0px;
 }
 
 .project__title::after {
-    background-image: url('../assets/right-arrow.png');
-    height: 15px;
-    widows: 15px;
-    margin: 5px;
-    display: inline-block;
-    content: ''
+  content: "";
+  display: inline-block;
+  background: url("../assets/arrow-point-to-right.png") no-repeat;
+  width: 25px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+.project__title:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+  padding-left: 15px;
 }
 
 .project__award {
@@ -131,6 +141,6 @@ export default {};
 }
 
 .project-skills {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 </style>
