@@ -1,6 +1,6 @@
 <template>
 <div v-scroll="onScroll" class="page-progress">
-    <v-progress-circular :value="scroll"></v-progress-circular>
+    <v-progress-circular color="#3233cc" :width="5" :size="40" :value="scroll"></v-progress-circular>
 </div>
 </template>
 

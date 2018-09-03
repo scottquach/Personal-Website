@@ -4,6 +4,7 @@
     <Story/>
     <Experience/>
     <ProjectHighlight/>
+    <Footer/>
 
     <PageProgress/>
   </div>
@@ -15,6 +16,7 @@ import Welcome from './components/Welcome.vue'
 import Story from './components/Story.vue'
 import Experience from './components/Experience.vue'
 import ProjectHighlight from './components/ProjectHighlight.vue'
+import Footer from './components/Footer.vue'
 
 import PageProgress from './components/PageProgress.vue'
 
@@ -26,14 +28,17 @@ export default {
     Story,
     Experience,
     ProjectHighlight,
+    Footer,
     PageProgress
   }
 }
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Lato|Noto+Sans|PT+Sans|Source+Sans+Pro");
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: start;
