@@ -1,6 +1,6 @@
 <template>
     <div class="welcome">
-        <h2 class="welcome__title">Hello there.</h2>
+        <h2 class="welcome__title">Hey there. 👋</h2>
 
         <h2 class="welcome__summary">
             I'm
@@ -40,7 +40,7 @@ export default {
     }
 
     .welcome__summary {
-        max-width: 750px;
+        max-width: 60%;
         font-weight: 50;
         line-height: 1.25;
     }
@@ -50,13 +50,16 @@ export default {
     }
 
     #name {
-        font-weight: 700;
+        /* font-weight: 700; */
+        background-color: #DBE2E7;
     }
 
      a {
-        color: #3233CC;
-        margin: 15px;
+        /* color: #3233CC; */
+        margin: 5px;
         text-decoration: none;
+        font-family: 'Inconsolata', monospace;
+        /* background-color: #DBE2E7; */
     }
 </style>
 

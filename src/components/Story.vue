@@ -2,8 +2,7 @@
     <div class="story">
         <h3 class="story__title">My Story</h3> 
         <p class="story__content">
-            Currently I am a student at the <span class="story__content--bold">University of Washington Bothell</span> obtaining my
-            Bachelors of Science in Computer Science and Software Engineering.
+            Currently I am a <span class="story__content--bold">student</span> learning from some of the most interesting and talented people in the field.
 
         </p>
         <p class="story__content">
@@ -39,13 +38,15 @@ export default {
     }
 
     .story__content {
-        max-width: 750px;
+        max-width: 60%;
         font-size: 1.60rem;
         font-weight: 300;
         /* line-height: 1.25; */
     }
 
     .story__content--bold {
-        font-weight: 700;
+        /* font-weight: 700; */
+        /* padding: 2px; */
+        background-color: #DBE2E7;
     }
 </style>

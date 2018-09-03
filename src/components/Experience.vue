@@ -10,11 +10,11 @@
                 </div>
                 <div class="job__position">Device Connectivity Intern</div>
                 <div class="job__skills-chip">
-                    <v-chip color="#3233CC" text-color="white" small>AWS IoT</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>DynamoDB</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>Sigfox Network</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>Cypress PSoC 4</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>Vue.js</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >AWS IoT</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >DynamoDB</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >Sigfox Network</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >Cypress PSoC 4</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >Vue.js</v-chip>
                 </div>
             </div>
 
@@ -25,11 +25,11 @@
                 </div>
                 <div class="job__position">Android Mobile Developer Intern</div>
                 <div class="job__skills-chip"> 
-                    <v-chip color="#3233CC" text-color="white" small>Java</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>Android Studio</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>Wear OS</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>GitHub</v-chip>
-                    <v-chip color="#3233CC" text-color="white" small>JIRA</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >Java</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >Android Studio</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >Wear OS</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >GitHub</v-chip>
+                    <v-chip color="#3233CC" text-color="white"  >JIRA</v-chip>
                 </div>
                 
             </div>
@@ -70,7 +70,7 @@ export default {
     }
 
     .job-company-time {
-        width: 70%;
+        width: 60%;
         display: flex;
         justify-content: space-between;
     }
@@ -97,7 +97,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         width: 45%;
-        margin: 0px;
+        margin-top: 5px;
     }
 
 

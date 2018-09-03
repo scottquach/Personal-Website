@@ -2,6 +2,7 @@
   <div id="app">
     <Welcome/>
     <Story/>
+    <Education/>
     <Experience/>
     <ProjectHighlight/>
     <Footer/>
@@ -14,6 +15,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import Welcome from './components/Welcome.vue'
 import Story from './components/Story.vue'
+import Education from './components/Education.vue'
 import Experience from './components/Experience.vue'
 import ProjectHighlight from './components/ProjectHighlight.vue'
 import Footer from './components/Footer.vue'
@@ -26,6 +28,7 @@ export default {
     HelloWorld,
     Welcome,
     Story,
+    Education,
     Experience,
     ProjectHighlight,
     Footer,

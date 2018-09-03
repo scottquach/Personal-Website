@@ -52,5 +52,6 @@ export default {};
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 1.25rem;
     }
 </style>
