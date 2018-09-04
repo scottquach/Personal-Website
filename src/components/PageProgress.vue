@@ -17,10 +17,9 @@ export default {
 
   methods: {
     onScroll(e) {
-      this.scroll =
-        100 /
-        ((document.body.scrollHeight - window.innerHeight) /
-          document.documentElement.scrollTop);
+      this.scroll = 100 / ((document.body.scrollHeight - window.innerHeight) /
+        (document.documentElement.scrollTop || document.body.scrollTop));
+      console.log(document.body.scrollHeight + "  " + window.innerHeight + "  " + document.documentElement.scrollTop)
     },
     windowWidthResized(event) {
       console.log("window resized " + document.documentElement.clientWidth);
