@@ -1,6 +1,6 @@
 <template>
     <div class="welcome">
-        <h2 class="welcome__title">Hey there. <span class="hand-wave">👋</span></h2>
+        <h2 class="welcome__title">Hi there. <span class="hand-wave">👋</span></h2>
 
         <h2 class="welcome__summary">
             I'm
