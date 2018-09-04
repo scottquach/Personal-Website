@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Welcome/>
+    <Welcome />
     <Story />
     <Education />
     <Experience />
