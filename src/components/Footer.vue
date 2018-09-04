@@ -9,7 +9,7 @@
             <a href="mailto:scottqglobal@gmail.com" target="_blank">email</a>
             <a href="https://www.linkedin.com/in/scott-quach/" target="_blank">LinkedIn</a>
             <a href="https://github.com/scottquach" target="_blank">GitHub</a>
-            <a href="https://play.google.com/store/apps/dev?id=8413458930040454334" target="_blank">Play Store</a>
+            <a href="https://play.google.com/store/apps/dev?id=8413458930040454334" target="_blank">PlayStore</a>
         </div>
     </div>
 </template>
@@ -73,5 +73,25 @@ a {
   font-weight: 700;
   font-size: 1.25rem;
   position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 2rem;
+    flex-direction: column;
+  }
+
+  .footer__links {
+    width: 100%;
+
+  }
+
+  a {
+    font-size: 2.75rem;
+    margin-left: 0px;
+    margin-right: 25px;
+  }
 }
 </style>

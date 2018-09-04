@@ -1,6 +1,6 @@
 <template>
     <div class="welcome">
-        <h2 class="welcome__title">Hey there. 👋</h2>
+        <h2 class="welcome__title">Hey there. <span class="hand-wave">👋</span></h2>
 
         <h2 class="welcome__summary">
             I'm
@@ -76,6 +76,26 @@ a {
   text-decoration: none;
   font-family: "Inconsolata", monospace;
   position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .welcome {
+    padding: 100px 100px;
+  }
+
+  .welcome__title {
+    font-size: 7rem;
+  }
+
+  .welcome__summary {
+    max-width: 100%;
+    font-size: 4.5rem;
+    line-height: 1.25;
+  }
+
+  .welcome__contact {
+    font-size: 4.5rem;
+  }
 }
 </style>
 

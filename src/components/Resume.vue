@@ -5,9 +5,7 @@
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 
@@ -40,6 +38,22 @@ export default {
   transition-timing-function: ease-in-out;
   transition-duration: 0.5s;
   padding-left: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .resume {
+    padding-left: 100px;
+  }
+
+  .resume__title {
+    font-size: 4rem;
+  }
+
+  .resume__title::after {
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+  }
 }
 </style>
 

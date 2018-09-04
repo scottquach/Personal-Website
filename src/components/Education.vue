@@ -11,42 +11,61 @@
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style scoped>
+.education {
+  padding: 100px 150px;
+  font-size: 1.5rem;
+  font-weight: 150;
+}
+
+.education__title {
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3233cc;
+}
+
+.school {
+}
+
+.school__name {
+  letter-spacing: 0.75px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.school__degree {
+  font-family: "Inconsolata", monospace;
+}
+
+.school__graduation-date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 992px) {
     .education {
-        padding: 100px 150px;
-        font-size: 1.50rem;
-        font-weight: 150;
+        padding: 100px 100px;
     }
 
-    .education__title {
-        margin-bottom: 25px;
-        letter-spacing: 2px;
-        text-transform: uppercase; 
-        color: #3233CC;
-    }
+  .education__title {
+    font-size: 7rem;
+  }
+  .school__name {
+    font-size: 3.25rem;
+  }
+  .school__degree {
+    font-size: 3.25rem;
+  }
 
-    .school {
-
-    }
-
-    .school__name {
-        letter-spacing: 0.75px;
-        margin-bottom: 5px;
-        font-weight: 700;
-    }
-
-    .school__degree {
-        font-family: 'Inconsolata', monospace;
-    }
-
-    .school__graduation-date {
-        font-size: 1.20rem;
-        font-weight: 500;
-        margin-top: 5px;
-    }
+  .school__graduation-date {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    padding: 0.75rem;
+  }
+}
 </style>

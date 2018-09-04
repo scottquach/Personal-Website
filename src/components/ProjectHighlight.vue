@@ -42,7 +42,7 @@
                  <div class="project" >
                     <a href="https://github.com/scottquach/Canvas-Assignments-Transfer-For-Todoist" target="_blank" class="project__title">Canvas Assignments Transfer to Todoist</a>
                     <div class="project__description">
-                        Python script capable of transfering a students assignments into the popular Todoist applications. All assignments are properly tagged
+                        Python script capable of transfering a students assignments into the popular Todoist app. All assignments are properly tagged
                         based on class with due dates set. 
                     </div>
                     <div class="project-skills">
@@ -142,5 +142,26 @@ export default {};
 
 .project-skills {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .project-highlights {
+    padding: 100px 100px;
+  }
+
+  .project-highlights__title {
+    font-size: 7rem;
+  }
+
+  .project-highlights-list {
+    width: 100%;
+    font-size: 3.10rem;
+  }
+
+  .project__title::after {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
 }
 </style>

@@ -18,35 +18,55 @@
 </template>
 
 <script>
-export default {
-    
-}
+export default {};
 </script>
 
 <style scoped>
-    .story {
-        padding: 100px 150px;
-        font-size: 1.5rem;
-        font-weight: 150;    
-    }
+.story {
+  padding: 100px 150px;
+  font-size: 1.5rem;
+  font-weight: 150;
+}
 
-    .story__title{
-        margin-bottom: 25px;
-        letter-spacing: 2px;
-        text-transform: uppercase; 
-        color: #3233CC;
-    }
+.story__title {
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3233cc;
+}
 
-    .story__content {
-        max-width: 60%;
-        font-size: 1.60rem;
-        font-weight: 300;
-        /* line-height: 1.25; */
-    }
+.story__content {
+  max-width: 60%;
+  font-size: 1.6rem;
+  font-weight: 300;
+  /* line-height: 1.25; */
+}
 
-    .story__content--bold {
-        /* font-weight: 700; */
-        /* padding: 2px; */
-        background-color: #DBE2E7;
-    }
+.story__content--bold {
+  /* font-weight: 700; */
+  /* padding: 2px; */
+  background-color: #dbe2e7;
+}
+
+@media screen and (max-width: 992px) {
+  .story {
+    padding: 100px 100px;
+  }
+
+  .story__title {
+    font-size: 7rem;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3233cc;
+  }
+
+  .story__content {
+    max-width: 100%;
+    margin-bottom: 5rem;
+    font-size: 3.25rem;
+    font-weight: 300;
+    /* line-height: 1.25; */
+  }
+}
 </style>
