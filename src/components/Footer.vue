@@ -75,11 +75,11 @@ a {
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .footer {
-    padding-left: 100px;
-    padding-right: 100px;
-    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* font-size: 2rem; */
     flex-direction: column;
   }
 
@@ -89,9 +89,8 @@ a {
   }
 
   a {
-    font-size: 2.75rem;
+    /* font-size: 2.75rem; */
     margin-left: 0px;
-    margin-right: 25px;
   }
 }
 </style>

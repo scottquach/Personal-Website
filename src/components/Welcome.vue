@@ -78,23 +78,23 @@ a {
   position: relative;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .welcome {
-    padding: 100px 100px;
+    padding: 2rem 2rem;
   }
 
   .welcome__title {
-    font-size: 7rem;
+    font-size: 2em;
   }
 
   .welcome__summary {
-    max-width: 100%;
-    font-size: 4.5rem;
+    min-width: 100%;    
+    font-size: 1em;
     line-height: 1.25;
   }
 
   .welcome__contact {
-    font-size: 4.5rem;
+    font-size: 1em;
   }
 }
 </style>

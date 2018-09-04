@@ -144,23 +144,23 @@ export default {};
   margin-top: 5px;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .project-highlights {
-    padding: 100px 100px;
+    padding: 3rem 2rem;
   }
 
   .project-highlights__title {
-    font-size: 7rem;
+    font-size: 2em;
   }
 
   .project-highlights-list {
     width: 100%;
-    font-size: 3.10rem;
+    font-size: 1em;
   }
 
   .project__title::after {
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     background-size: cover;
   }
 }

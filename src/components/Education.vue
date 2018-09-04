@@ -47,25 +47,25 @@ export default {};
   margin-top: 5px;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .education {
-        padding: 100px 100px;
+        padding: 3rem 2rem;
     }
 
   .education__title {
-    font-size: 7rem;
+    font-size: 2em;
   }
   .school__name {
-    font-size: 3.25rem;
+    font-size: 1em;
   }
   .school__degree {
-    font-size: 3.25rem;
+    font-size: 1em;
   }
 
   .school__graduation-date {
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    padding: 0.75rem;
+    font-size: 0.65em;
+    margin-top: 0.5rem;
+    /* padding: 0.75rem; */
   }
 }
 </style>

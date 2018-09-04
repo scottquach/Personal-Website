@@ -40,19 +40,19 @@ export default {};
   padding-left: 15px;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .resume {
-    padding-left: 100px;
+    padding-left: 2rem;
   }
 
   .resume__title {
-    font-size: 4rem;
+    font-size: 2em;
   }
 
   .resume__title::after {
     background-size: cover;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
   }
 }
 </style>

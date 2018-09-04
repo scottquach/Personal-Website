@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <Welcome v-scroll-reveal/>
-    <Story v-scroll-reveal/>
-    <Education v-scroll-reveal/>
-    <Experience v-scroll-reveal/>
-    <ProjectHighlight v-scroll-reveal/>
+    <Welcome/>
+    <Story />
+    <Education />
+    <Experience />
+    <ProjectHighlight/>
     <Resume/>
     <Footer/>
 
@@ -13,7 +13,6 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
 import Welcome from "./components/Welcome.vue";
 import Story from "./components/Story.vue";
 import Education from "./components/Education.vue";
@@ -27,7 +26,6 @@ import PageProgress from "./components/PageProgress.vue";
 export default {
   name: "app",
   components: {
-    HelloWorld,
     Welcome,
     Story,
     Education,
@@ -49,13 +47,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: start;
   color: #2c3e50;
-  display: block;
+  display: inline-block;
 }
 
-@media screen and (max-width: 992px) {
+/* @media only screen and (max-width: 992px) {
   .v-chip__content {
     font-size: 2rem;
     margin: 0.5rem;
   }
-}
+} */
 </style>

@@ -95,35 +95,35 @@ export default {};
   width: 45%;
   margin-top: 5px;
 }
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .experience {
-    padding: 100px 100px;
+    padding: 3rem 2rem;
   }
 
   .experience__title {
-    font-size: 7rem;
+    font-size: 2em;
   }
 
   .job {
-    font-size: 3.25rem;
+    font-size: 1em;
   }
 
   .job-company-time {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
   .job__time {
-    font-size: 3rem;
+    font-size: 1em;
   }
 
   .job__skills-chip {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 5px;
+    
   }
 }
 </style>

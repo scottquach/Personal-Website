@@ -48,13 +48,13 @@ export default {};
   background-color: #dbe2e7;
 }
 
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .story {
-    padding: 100px 100px;
+    padding: 2rem 2rem;
   }
 
   .story__title {
-    font-size: 7rem;
+    font-size: 2em;
     margin-bottom: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -63,10 +63,9 @@ export default {};
 
   .story__content {
     max-width: 100%;
-    margin-bottom: 5rem;
-    font-size: 3.25rem;
+    margin-bottom: 2rem;
+    font-size: 1em;
     font-weight: 300;
-    /* line-height: 1.25; */
   }
-}
+} 
 </style>
