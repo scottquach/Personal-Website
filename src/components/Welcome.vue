@@ -6,7 +6,7 @@
             I'm
             <span id="name">Scott Quach</span>,
              a Software Engineer with a passion for 
-            Android development focused on gaining a full stack skillset. 
+            Android development focused on gaining a full stack skill set. 
         </h2>
 
         <h3 class="welcome__contact">
