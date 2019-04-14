@@ -1,6 +1,6 @@
 # Personal website built on Vue.js
 
-This is the second iteration of my personal website built on top of the Vue.js framework with minor use of the Vuetify UI library.
+This is the third iteration of my personal website built on top of the Vue.js framework with minor use of the Vuetify UI library.
 
 The site can be accessed at www.scottquach.me
 
