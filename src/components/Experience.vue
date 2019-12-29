@@ -1,40 +1,54 @@
 <template>
-    <div class="experience">
-        <h3 class="experience__title">Experience</h3> 
+  <div class="experience">
+    <h3 class="experience__title">Experience</h3>
 
-        <div class="experience-jobs-list">
-            <div class="job"> 
-                <div class="job-company-time">
-                    <div class="job__company">Novo Nordisk</div>
-                    <div class="job__time">June - August 2018</div>
-                </div>
-                <div class="job__position">Device Connectivity Intern</div>
-                <div class="job__skills-chip">
-                    <v-chip class="skill" color="#3233CC" text-color="white">AWS IoT</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">DynamoDB</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">Sigfox Network</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">Cypress PSoC 4</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">Vue.js</v-chip>
-                </div>
-            </div>
-
-            <div class="job"> 
-                <div class="job-company-time">
-                    <div class="job__company">Accolade</div>
-                    <div class="job__time">June - August 2017</div>
-                </div>
-                <div class="job__position">Android Mobile Developer Intern</div>
-                <div class="job__skills-chip"> 
-                    <v-chip class="skill" color="#3233CC" text-color="white">Java</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">Android Studio</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">Wear OS</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">GitHub</v-chip>
-                    <v-chip class="skill" color="#3233CC" text-color="white">JIRA</v-chip>
-                </div>
-                
-            </div>
+    <div class="experience-jobs-list">
+      <div class="job">
+        <div class="job-company-time">
+          <div class="job__company">T-Mobile</div>
+          <div class="job__time">October 2018 - Present</div>
         </div>
+        <div class="job__position">Software Engineer Intern</div>
+        <div class="job__skills-chip">
+          <v-chip class="skill" color="#3233CC" text-color="white">Angular 2+</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">PostgreSQL</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">AWS Lambda</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Kubernetes</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Node.js</v-chip>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-company-time">
+          <div class="job__company">Novo Nordisk</div>
+          <div class="job__time">June - August 2018</div>
+        </div>
+        <div class="job__position">Device Connectivity Intern</div>
+        <div class="job__skills-chip">
+          <v-chip class="skill" color="#3233CC" text-color="white">AWS IoT</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">DynamoDB</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Sigfox Network</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Cypress PSoC 4</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Vue.js</v-chip>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-company-time">
+          <div class="job__company">Accolade</div>
+          <div class="job__time">June - August 2017</div>
+        </div>
+        <div class="job__position">Android Mobile Developer Intern</div>
+        <div class="job__skills-chip">
+          <v-chip class="skill" color="#3233CC" text-color="white">Java</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Android Studio</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">Wear OS</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">GitHub</v-chip>
+          <v-chip class="skill" color="#3233CC" text-color="white">JIRA</v-chip>
+        </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
@@ -123,7 +137,6 @@ export default {};
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
   }
 }
 </style>
