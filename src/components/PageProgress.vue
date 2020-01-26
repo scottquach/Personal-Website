@@ -1,7 +1,14 @@
 <template>
-<div v-scroll="onScroll" class="page-progress">
-    <v-progress-circular v-on:click="scrollTop" class="progress" color="#3233cc" :width="width" :size="size" :value="scroll"></v-progress-circular>
-</div>
+  <div v-scroll="onScroll" class="page-progress">
+    <v-progress-circular
+      v-on:click="scrollTop"
+      class="progress"
+      color="#3233cc"
+      :width="width"
+      :size="size"
+      :value="scroll"
+    ></v-progress-circular>
+  </div>
 </template>
 
 <script>
@@ -17,9 +24,11 @@ export default {
 
   methods: {
     onScroll(e) {
-      this.scroll = 100 / ((document.body.scrollHeight - window.innerHeight) /
-        (document.documentElement.scrollTop || document.body.scrollTop));
-      console.log(document.body.scrollHeight + "  " + window.innerHeight + "  " + document.documentElement.scrollTop)
+      this.scroll =
+        100 /
+        ((document.body.scrollHeight - window.innerHeight) /
+          (document.documentElement.scrollTop || document.body.scrollTop));
+      // console.log(document.body.scrollHeight + "  " + window.innerHeight + "  " + document.documentElement.scrollTop)
     },
     windowWidthResized(event) {
       console.log("window resized " + document.documentElement.clientWidth);

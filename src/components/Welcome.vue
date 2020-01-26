@@ -1,50 +1,113 @@
 <template>
-    <div class="welcome">
-        <h2 class="welcome__title">Hi there. <span class="hand-wave">👋</span></h2>
+  <div class="welcome">
+    <div class="container__content">
+      <vue-typer
+        class="text__title"
+        :text="entryText"
+        :repeat="0"
+        erase-style="select-all"
+        erase-delay="40"
+        caret-animation="smooth"
+      ></vue-typer>
 
-        <h2 class="welcome__summary">
-            I'm
-            <span id="name">Scott Quach</span>,
-             a Software Engineer with a passion for 
-            Android development focused on gaining a full stack skill set. 
-        </h2>
-
-        <h3 class="welcome__contact">
-            Care to chat?
-            <a href="mailto:scottqglobal@gmail.com" target="_blank">scottqglobal@gmail.com</a>
-        </h3>
+      <div class="container__details">
+        <div class="text__summary">A Software Engineer trying to turn ideas into reality.</div>
+        <div class="text__contact">
+          Care to chat?
+          <a
+            href="mailto:scottqglobal@gmail.com"
+            target="_blank"
+          >📧scottqglobal@gmail.com</a>
+        </div>
+      </div>
     </div>
+
+    <div class="container__center">
+      <img class="scroll-icon" src="../assets/arrow-down.svg" />
+    </div>
+
+    <!-- <h2 class="welcome__title">
+      Hi there.
+      <span class="hand-wave">👋</span>
+    </h2>-->
+
+    <!-- <h2 class="welcome__summary">
+      I'm
+    <span id="name">Scott Quach</span>,-->
+  </div>
 </template>
 
 <script>
-export default {};
+import { VueTyper } from "vue-typer";
+
+export default {
+  data: () => {
+    return {
+      entryText: ["Hello there 👋", "I'm Scott Quach"]
+    };
+  },
+  components: {
+    VueTyper
+  }
+};
 </script>
 
 <style scoped>
 .welcome {
   padding: 100px 150px;
+  padding-bottom: 0px;
   margin: 0px;
   height: 100vh;
-  text-align: start;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  text-align: start;
   font-size: 1.75rem;
 }
 
-.welcome__title {
+.container__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__details {
+  position: relative;
+  opacity: 0;
+  animation: reveal 3s;
+  animation-delay: 4.25s;
+  animation-fill-mode: forwards;
+}
+
+.container__center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-self: end;
+}
+
+.text__title {
   font-size: 3.5rem;
   font-weight: 50;
 }
 
-.welcome__summary {
+.text__summary {
   max-width: 60%;
   font-weight: 50;
   line-height: 1.25;
 }
 
-.welcome__contact {
-  font-weight: 250;
+.text__contact {
+  margin-top: 5rem;
+  font-weight: 50;
+}
+
+.scroll-icon {
+  width: 3rem;
+  height: 3rem;
+  animation: blink 3s infinite;
+  color: gray;
 }
 
 #name {
@@ -78,6 +141,36 @@ a {
   position: relative;
 }
 
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: -10px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .welcome {
     padding: 2rem 2rem;
@@ -88,7 +181,7 @@ a {
   }
 
   .welcome__summary {
-    min-width: 100%;    
+    min-width: 100%;
     font-size: 1em;
     line-height: 1.25;
   }
