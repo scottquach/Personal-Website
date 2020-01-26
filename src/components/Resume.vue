@@ -1,7 +1,7 @@
 <template>
-    <div class="resume">
-        <a href="/Scott_Quach_Resume.pdf" target="_blank" class="resume__title">View my resume</a>
-    </div>
+  <div class="resume">
+    <a href="/Scott_Quach_Resume_v3.pdf" target="_blank" class="resume__title">View my resume</a>
+  </div>
 </template>
 
 <script>

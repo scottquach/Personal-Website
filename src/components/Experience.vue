@@ -10,11 +10,13 @@
         </div>
         <div class="job__position">Software Engineer Intern</div>
         <div class="job__skills-chip">
-          <v-chip class="skill" color="#3233CC" text-color="white">Angular 2+</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">PostgreSQL</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">AWS Lambda</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Kubernetes</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Node.js</v-chip>
+          <v-chip
+            class="skill-chip"
+            v-for="skill of tmobileSkills"
+            :key="skill"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
 
@@ -25,34 +27,58 @@
         </div>
         <div class="job__position">Device Connectivity Intern</div>
         <div class="job__skills-chip">
-          <v-chip class="skill" color="#3233CC" text-color="white">AWS IoT</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">DynamoDB</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Sigfox Network</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Cypress PSoC 4</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Vue.js</v-chip>
+          <v-chip
+            class="skill-chip"
+            v-for="skill of accoladeSkills"
+            :key="skill"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
+    </div>
 
-      <div class="job">
-        <div class="job-company-time">
-          <div class="job__company">Accolade</div>
-          <div class="job__time">June - August 2017</div>
-        </div>
-        <div class="job__position">Android Mobile Developer Intern</div>
-        <div class="job__skills-chip">
-          <v-chip class="skill" color="#3233CC" text-color="white">Java</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Android Studio</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">Wear OS</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">GitHub</v-chip>
-          <v-chip class="skill" color="#3233CC" text-color="white">JIRA</v-chip>
-        </div>
+    <div class="job">
+      <div class="job-company-time">
+        <div class="job__company">Accolade</div>
+        <div class="job__time">June - August 2017</div>
+      </div>
+      <div class="job__position">Android Mobile Developer Intern</div>
+      <div class="job__skills-chip">
+        <v-chip
+          class="skill-chip"
+          v-for="skill of accoladeSkills"
+          :key="skill"
+          color="#3233CC"
+          text-color="#FFFFFF"
+        >{{ skill }}</v-chip>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => {
+    return {
+      tmobileSkills: [
+        "Angular 2+",
+        "PostgreSQL",
+        "AWS Lambda",
+        "Kubernetes",
+        "Node.js"
+      ],
+      novoNordiskSkills: [
+        "AWS IoT",
+        "DynamoDB",
+        "Sigfox Network",
+        "Cypress PSoC 4",
+        "Vue.js"
+      ],
+      accoladeSkills: ["Java", "Android Studio", "Wear OS", "GitHub", "JIRA"]
+    };
+  }
+};
 </script>
 
 <style>
@@ -100,7 +126,8 @@ export default {};
   font-weight: 100;
 }
 
-.job__description {
+.skill-chip {
+  margin-right: 0.25rem;
 }
 
 .job__skills-chip {

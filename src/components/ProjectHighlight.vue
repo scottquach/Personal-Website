@@ -10,11 +10,13 @@
         >Personal Website V2</a>
         <div class="project__description">That's the site your scrolling through now!</div>
         <div class="project-skills">
-          <v-chip color="#3233CC" text-color="white">Vue.js</v-chip>
-          <v-chip color="#3233CC" text-color="white">HTML</v-chip>
-          <v-chip color="#3233CC" text-color="white">CSS</v-chip>
-          <v-chip color="#3233CC" text-color="white">NPM</v-chip>
-          <v-chip color="#3233CC" text-color="white">Firebase Hosting</v-chip>
+          <v-chip
+            v-for="skill of personalWeb2Skills"
+            :key="skill"
+            class="skill-chip"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
 
@@ -29,11 +31,13 @@
         >A social app designed to encourage friends to meet together in person more often.</div>
         <div class="project__award">🏆 Awarded Major League Hackathon Most Creative Project</div>
         <div class="project-skills">
-          <v-chip color="#3233CC" text-color="white">Java</v-chip>
-          <v-chip color="#3233CC" text-color="white">Kotlin</v-chip>
-          <v-chip color="#3233CC" text-color="white">Node.js</v-chip>
-          <v-chip color="#3233CC" text-color="white">Firebase Platform</v-chip>
-          <v-chip color="#3233CC" text-color="white">Android</v-chip>
+          <v-chip
+            v-for="skill of nobisLinkSkills"
+            :key="skill"
+            class="skill-chip"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
 
@@ -47,11 +51,13 @@
           class="project__description"
         >Chatbot that helps students organize their homework using a texting interface as opposed to a traditional planner</div>
         <div class="project-skills">
-          <v-chip color="#3233CC" text-color="white">Kotlin</v-chip>
-          <v-chip color="#3233CC" text-color="white">Node.js</v-chip>
-          <v-chip color="#3233CC" text-color="white">Dialogflow</v-chip>
-          <v-chip color="#3233CC" text-color="white">Firebase Platform</v-chip>
-          <v-chip color="#3233CC" text-color="white">Android</v-chip>
+          <v-chip
+            v-for="skill of plannerBotSkills"
+            :key="skill"
+            class="skill-chip"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
 
@@ -66,8 +72,13 @@
           based on class with due dates set.
         </div>
         <div class="project-skills">
-          <v-chip color="#3233CC" text-color="white">Python</v-chip>
-          <v-chip color="#3233CC" text-color="white">Instructure API</v-chip>
+          <v-chip
+            v-for="skill of transferToTodoistSkills"
+            :key="skill"
+            class="skill-chip"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
 
@@ -81,9 +92,13 @@
           class="project__description"
         >Orignal personal website built using the foundational web languages</div>
         <div class="project-skills">
-          <v-chip color="#3233CC" text-color="white">HTML</v-chip>
-          <v-chip color="#3233CC" text-color="white">CSS</v-chip>
-          <v-chip color="#3233CC" text-color="white">GitHub Pages</v-chip>
+          <v-chip
+            v-for="skill of personalWeb1Skills"
+            :key="skill"
+            class="skill-chip"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
 
@@ -98,9 +113,13 @@
           to encourage a consistent pace.
         </div>
         <div class="project-skills">
-          <v-chip color="#3233CC" text-color="white">Java</v-chip>
-          <v-chip color="#3233CC" text-color="white">SQLite</v-chip>
-          <v-chip color="#3233CC" text-color="white">Android</v-chip>
+          <v-chip
+            v-for="skill of pushUpSkills"
+            :key="skill"
+            class="skill-chip"
+            color="#3233CC"
+            text-color="#FFFFFF"
+          >{{ skill }}</v-chip>
         </div>
       </div>
     </div>
@@ -112,7 +131,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => {
+    return {
+      personalWeb2Skills: ["Vue.js", "HTML", "CSS", "Firebase Hosting"],
+      nobisLinkSkills: [
+        "Java",
+        "Kotlin",
+        "Node.js",
+        "Firebase Platform",
+        "Android"
+      ],
+      plannerBotSkills: [
+        "Kotlin",
+        "Node.js",
+        "Dialogflow",
+        "firebase Platform",
+        "Android"
+      ],
+      transferToTodoistSkills: ["Python", "Instructure API"],
+      personalWeb1Skills: ["HTML", "CSS", "GitHub Pages"],
+      pushUpSkills: ["Java", "SQLite", "Android"]
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -172,6 +214,10 @@ export default {};
 
 .project-skills {
   margin-top: 5px;
+}
+
+.skill-chip {
+  margin-right: 0.25rem;
 }
 
 @media only screen and (max-width: 992px) {

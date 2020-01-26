@@ -1,17 +1,36 @@
 <template>
-    <div class="education">
-        <h3 class="education__title">Education</h3>
-        <div class="school">
-            <div class="school__name">University of Washington Bothell</div>
-            <div class="school__degree">Bachelors of Science in Computer Science and Software Engineering</div>
-            <v-chip class="school__graduation-date" color="#3233CC" text-color="white">Graduating 2020</v-chip>
-            <!-- <div class="school__graduation-date">Graduating 2020</div> -->
-        </div>
+  <div class="education">
+    <h3 class="education__title">Education</h3>
+    <div class="container__school-name">
+      <div class="school__name">University of Washington Bothell</div>
+      <div class="text__graduation">Graduating March 2020</div>
     </div>
+    <div class="school__degree">Bachelors of Science in Computer Science and Software Engineering</div>
+    <v-chip
+      v-for="subject in subjects"
+      v-bind:key="subject"
+      class="subject__chip"
+      color="#3233CC"
+      text-color="#FFFFFF"
+    >{{ subject }}</v-chip>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => {
+    return {
+      subjects: [
+        "Database Systems",
+        "Cloud Computing",
+        "Hardware and Computer Organization",
+        "Data Structures and Algorithms",
+        "Cyber Security",
+        "Software Project Management"
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -19,6 +38,7 @@ export default {};
   padding: 100px 150px;
   font-size: 1.5rem;
   font-weight: 150;
+  width: 75rem;
 }
 
 .education__title {
@@ -28,7 +48,10 @@ export default {};
   color: #3233cc;
 }
 
-.school {
+.container__school-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .school__name {
@@ -41,16 +64,22 @@ export default {};
   font-family: "Inconsolata", monospace;
 }
 
-.school__graduation-date {
+.subject__chip {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 5px;
+  margin-right: 0.25rem;
+}
+
+.text__graduation {
+  font-size: 1.25rem;
+  font-family: "Inconsolata", monospace;
 }
 
 @media only screen and (max-width: 992px) {
-    .education {
-        padding: 3rem 2rem;
-    }
+  .education {
+    padding: 3rem 2rem;
+  }
 
   .education__title {
     font-size: 2em;

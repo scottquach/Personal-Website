@@ -2,13 +2,12 @@
   <div id="app">
     <Welcome />
     <Story />
-    <Education />
     <Experience />
-    <ProjectHighlight/>
-    <Resume/>
-    <Footer/>
-
-    <PageProgress/>
+    <ProjectHighlight />
+    <Education />
+    <Resume />
+    <Footer />
+    <PageProgress />
   </div>
 </template>
 

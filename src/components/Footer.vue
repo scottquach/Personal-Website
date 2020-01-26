@@ -1,17 +1,20 @@
 <template>
-    <div class="footer">
-        <div>
-            <div class="footer__created">Created by Scott Quach 2018 ✏️</div>
-            <div class="footer__inspired">Inspired by Brittany Chiang 💡</div>
-        </div>
-
-        <div class="footer-links">
-            <a href="mailto:scottqglobal@gmail.com" target="_blank">email</a>
-            <a href="https://www.linkedin.com/in/scott-quach/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/scottquach" target="_blank">GitHub</a>
-            <a href="https://play.google.com/store/apps/dev?id=8413458930040454334" target="_blank">PlayStore</a>
-        </div>
+  <div class="footer">
+    <div>
+      <div class="footer__created">Created by Scott Quach 2018 ✏️</div>
+      <!-- <div class="footer__inspired">Inspired by Brittany Chiang 💡</div> -->
     </div>
+
+    <div class="footer-links">
+      <a href="mailto:scottqglobal@gmail.com" target="_blank">email</a>
+      <a href="https://www.linkedin.com/in/scott-quach/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/scottquach" target="_blank">GitHub</a>
+      <a
+        href="https://play.google.com/store/apps/dev?id=8413458930040454334"
+        target="_blank"
+      >PlayStore</a>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -85,7 +88,6 @@ a {
 
   .footer__links {
     width: 100%;
-
   }
 
   a {
