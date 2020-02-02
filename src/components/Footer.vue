@@ -28,7 +28,7 @@ export default {};
   justify-content: space-between;
   width: 100%;
   padding-bottom: 50px;
-  padding-left: 150px;
+  padding-left: 7.5rem;
   padding-right: 150px;
   margin-top: 50px;
   font-size: 1.15rem;
@@ -80,8 +80,8 @@ a {
 
 @media only screen and (max-width: 992px) {
   .footer {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     /* font-size: 2rem; */
     flex-direction: column;
   }

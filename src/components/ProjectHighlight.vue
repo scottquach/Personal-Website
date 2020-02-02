@@ -159,7 +159,7 @@ export default {
 
 <style scoped>
 .project-highlights {
-  padding: 100px 150px;
+  padding: 7.5rem 7.5rem;
   font-size: 1.5rem;
 }
 
@@ -178,7 +178,7 @@ export default {
 }
 
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 2.5rem;
 }
 
 .project__title {
@@ -222,16 +222,24 @@ export default {
 
 @media only screen and (max-width: 992px) {
   .project-highlights {
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .project-highlights__title {
-    font-size: 2em;
+    font-size: 2rem;
+  }
+
+  .project__description {
+    font-size: 1.25rem;
   }
 
   .project-highlights-list {
     width: 100%;
     font-size: 1em;
+  }
+
+  .project {
+    margin-bottom: 1.75rem;
   }
 
   .project__title::after {

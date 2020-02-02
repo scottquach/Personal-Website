@@ -34,7 +34,7 @@ export default {};
 
 <style scoped>
 .story {
-  padding: 100px 150px;
+  padding: 7.5rem 7.5rem;
   font-size: 1.5rem;
   font-weight: 150;
 }
@@ -61,11 +61,11 @@ export default {};
 
 @media only screen and (max-width: 992px) {
   .story {
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .story__title {
-    font-size: 2em;
+    font-size: 1.75rem;
     margin-bottom: 25px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -74,9 +74,9 @@ export default {};
 
   .story__content {
     max-width: 100%;
-    margin-bottom: 2rem;
-    font-size: 1em;
+    font-size: 1.25rem;
     font-weight: 300;
+    /* line-height: 1.25; */
   }
 }
 </style>

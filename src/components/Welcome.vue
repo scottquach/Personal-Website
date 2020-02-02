@@ -25,15 +25,6 @@
     <div class="container__center">
       <img class="scroll-icon" src="../assets/arrow-down.svg" />
     </div>
-
-    <!-- <h2 class="welcome__title">
-      Hi there.
-      <span class="hand-wave">👋</span>
-    </h2>-->
-
-    <!-- <h2 class="welcome__summary">
-      I'm
-    <span id="name">Scott Quach</span>,-->
   </div>
 </template>
 
@@ -54,9 +45,9 @@ export default {
 
 <style scoped>
 .welcome {
-  padding: 100px 150px;
-  padding-bottom: 0px;
-  margin: 0px;
+  padding: 7.5rem 7.5rem;
+  /* padding-bottom: 0px; */
+  /* margin: 0px; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -173,16 +164,18 @@ a {
 
 @media only screen and (max-width: 992px) {
   .welcome {
-    padding: 2rem 2rem;
+    padding: 0rem 1rem;
+    font-size: 1.25 rem;
   }
 
-  .welcome__title {
-    font-size: 2em;
+  .text__title {
+    font-size: 2rem;
+    font-weight: 50;
   }
 
-  .welcome__summary {
-    min-width: 100%;
-    font-size: 1em;
+  .text__summary {
+    max-width: 100%;
+    font-weight: 50;
     line-height: 1.25;
   }
 

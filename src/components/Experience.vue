@@ -83,7 +83,7 @@ export default {
 
 <style>
 .experience {
-  padding: 100px 150px;
+  padding: 7.5rem 7.5rem;
   font-size: 1.5rem;
   font-weight: 150;
 }
@@ -102,7 +102,7 @@ export default {
 }
 
 .job {
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
   font-size: 1.5rem;
 }
 
@@ -138,32 +138,48 @@ export default {
 }
 @media only screen and (max-width: 992px) {
   .experience {
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .experience__title {
-    font-size: 2em;
+    font-size: 1.75rem;
   }
 
   .job {
-    font-size: 1em;
+    margin-bottom: 2rem;
+    font-size: 1rem;
   }
 
   .job-company-time {
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
   }
 
+  .job__company {
+    letter-spacing: 0.75px;
+    font-weight: 700;
+  }
+
   .job__time {
-    font-size: 1em;
+    font-size: 1.25rem;
+    font-family: "Inconsolata", monospace;
+  }
+
+  .job__position {
+    font-weight: 100;
   }
 
   .job__skills-chip {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 5px;
+  }
+
+  .skill-chip {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
   }
 }
 </style>

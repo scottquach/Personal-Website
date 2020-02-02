@@ -11,7 +11,7 @@ export default {};
 
 <style scoped>
 .resume {
-  padding-left: 150px;
+  padding-left: 7.5rem;
 }
 
 .resume__title {
@@ -42,7 +42,7 @@ export default {};
 
 @media only screen and (max-width: 992px) {
   .resume {
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 
   .resume__title {

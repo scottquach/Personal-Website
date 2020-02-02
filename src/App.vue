@@ -47,12 +47,9 @@ export default {
   text-align: start;
   color: #2c3e50;
   display: inline-block;
+  /* width: 100vw; */
 }
 
-/* @media only screen and (max-width: 992px) {
-  .v-chip__content {
-    font-size: 2rem;
-    margin: 0.5rem;
-  }
-} */
+@media only screen and (max-width: 600px) {
+}
 </style>

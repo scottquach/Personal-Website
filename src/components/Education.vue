@@ -35,10 +35,10 @@ export default {
 
 <style scoped>
 .education {
-  padding: 100px 150px;
+  padding: 7.5rem 7.5rem;
   font-size: 1.5rem;
   font-weight: 150;
-  width: 75rem;
+  width: 60%;
 }
 
 .education__title {
@@ -78,17 +78,26 @@ export default {
 
 @media only screen and (max-width: 992px) {
   .education {
-    padding: 3rem 2rem;
+    padding: 1rem 1rem;
+    width: 100%;
   }
 
   .education__title {
-    font-size: 2em;
+    font-size: 1.75rem;
   }
+
+  .container__school-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+  }
+
   .school__name {
-    font-size: 1em;
+    font-size: 1.5rem;
   }
   .school__degree {
-    font-size: 1em;
+    font-size: 1.25rem;
   }
 
   .school__graduation-date {
