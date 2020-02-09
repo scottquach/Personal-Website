@@ -65,7 +65,8 @@ export default {
         "Angular 2+",
         "PostgreSQL",
         "AWS Lambda",
-        "Kubernetes",
+        "Docker",
+        "TypeScript",
         "Node.js"
       ],
       novoNordiskSkills: [
